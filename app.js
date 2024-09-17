@@ -83,3 +83,12 @@ form.addEventListener('submit', function(e) {
             }, 3000);
         });
 });
+
+var loader = document.getElementById("loader");
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Set a timeout to remove the loader after 5 seconds (5000 milliseconds)
+  setTimeout(() => {
+    loader.remove(); // Removes the loader element from the DOM
+  }, 5000);
+});
